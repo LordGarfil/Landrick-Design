@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">
+        <div class="welcome-div grid-2columns center-content">
+            <div class="welcome-leftSide">
+                <h1><strong>Welcome <span>Buddy</span></strong></h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, architecto, repellendus debitis quas ullam deleniti vero eaque nobis dicta distinctio culpa dolore nemo laboriosam amet? At maiores nobis quibusdam minus?
+            </div>
+            <div class="welcome-rightSide">
+                <img src="./src/Startup_SVG.svg" alt="">
+            </div>
+        </div>
+        
+        <div class="form-user grid-2columns center-content">
+            <div class="left-side">
+                <img src="./src/login_svg.png" alt="">
+            </div>
+            <div class="right-side">
+                <div class="user-div">
+                    <h1><strong>Login</strong></h1>
+                    <form action="" class="login-form">
+                        <div class="inline-div">
+                            <span><strong>User</strong></span>
+                            <input type="text" class="form-control" id="" placeholder="User">
+                        </div>
+                        <div class="inline-div">
+                            <span><strong>Password</strong></span>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <input type="submit" class="btn btn-primary form-control" value="Log in">
+                    </form>
+                </div>
+                    
+            </div>
+        </div>
+
+        <div class="creator-section grid-2columns">
+            <div class="creator-div">
+                <h1 class="horizontal-center"><strong> <span>C</span>reator</strong></h1>
+                <div class="creator-img horizontal-center">
+                    <img src="src/creator.jpg" alt="">
+                    <p><span>Juan Restrepo</span> <br> is the creator of this site!</p>
+                </div>
+                <div class="creator-bg">
+                   
+                </div>
+            </div>
+            <div class="social-media-div grid-2columns vertical-center">
+                <div class="card">
+                    <div class="social-media-header text-center">
+                        <h2><strong>Github</strong></h2>
+                    </div>
+                    <div class="card-body social-media-body">
+                        
+                        <img  src="src/github-icon.svg" alt="">
+                        <button id="btnGithub" class="btn btn-primary">Click me</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="social-media-header text-center">
+                        <h2><strong>Facebook</strong></h2>
+                    </div>
+                    <div class="card-body social-media-body">
+                        <img src="src/facebook-icon.svg" alt="">
+                        <button id="btnFacebook" class="btn btn-primary">Click me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

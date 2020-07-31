@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.root {
+  height: 100vh;
+  
+}
+
+.grid-2columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-1columns {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.center-content {
+  align-items: center;
+  justify-items: center;
+}
+
+.vertical-center{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.horizontal-center{
+  display: block;
+  text-align: center;
+}
+
+.inline-div {
+  display: grid;
+}
+
+/* Welcome section */
+
+.welcome-div {
+  height: 100%;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 5em;
+}
+
+.welcome-leftSide h1{
+    font-size: 3em;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.welcome-leftSide span{
+    color: #536dfe;
+}
+
+.welcome-rightSide img {
+  width: 35em;
+}
+
+/* User section */
+.form-user {
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 5em;
+  height: 100%;
+  background-color: #FAFAFA;
+  border-top: 1px solid #E1E0E0;
+  border-bottom: 1px solid #E1E0E0;
+}
+
+.left-side img {
+  width: 35em;
+}
+
+.right-side h1{
+  font-size: 3em;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+    border-bottom: 3px solid #536dfe;
+}
+
+.right-side span{
+  color: #536dfe;
+}
+
+.user-div{
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.login-form input[type=submit]{
+  background-color: #536dfe;
+}
+
+.right-side form{
+  margin-top: 2em;
+  display: inline-block;
+}
+
+/* Creator section */
+
+.creator-section{
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 100%;
+}
+
+.creator-section h1{
+  font-size: 3em;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.creator-section span{
+  color: #536dfe;
+}
+
+.creator-div h1{
+  margin-bottom: 1em;
+}
+
+.creator-img img{
+  width: 18em;
+  border-radius: 50%;
+  
+}
+
+.creator-img p{
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2em;
+}
+
+.creator-img span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.social-media-div .card{
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em;
+  border-radius: 20px;
+}
+
+.social-media-div .card{
+  border: 2px solid black;
+  margin-bottom: 1em;
+}
+
+.social-media-div img{
+  width: 10em;
+}
+
+.social-media-header{
+  border-top-left-radius: 17px !important;
+  border-top-right-radius: 17px !important;
+  border-bottom: 2px solid black;
+  background-color: #536dfe;
+}
+
+.social-media-header h2{
+  color: white;
+  margin: auto;
+}
+
+.social-media-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media-body button{
+  margin-top: 1em;
+  background-color: #536dfe;
+  border-radius: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 200px;
+  height: 25px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 1em;
+}
+
+input:focus {
+  border-color: #536dfe !important;
+  box-shadow: none !important;
+  transition: border-color 0.5s ease-in-out 0s;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .form-user {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .form-user form{
+    padding-bottom: 2em;
+  }
+  .left-side img {
+    width: 15em;
+  }
+
+  .welcome-div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-rightSide img {
+    width: 17em;
+  }
+
+  .creator-section{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+.creator-img img{
+  width: 10em;
+}
+
+.social-media-div{
+  display: grid;
+  grid-template-columns: 1fr; 
+}
+
+.social-media-div div{
+  width: 100%;
+}
+
+.social-media-div img{
+  width: 5em;
+}
+
+}
